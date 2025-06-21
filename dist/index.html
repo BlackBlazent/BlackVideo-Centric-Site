@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta name="title" content="BlackVideo - Versatile Empowered Video Player | Integrated Media Experience">
+  <meta name="description" content="BlackVideo is a powerful video player designed for ultimate control and performance. Supports advanced playback features, resolution switching, subtitles, audio tools, and more.">
+  <!-- Keywords -->
+  <meta name="keywords" content="BlackVideo, video player, versatile player, integrated media, advanced video playback, cross-platform player, HD player, customizable video player, open source media player, pip, bitrate, resolution selector">
+  <link rel="icon" type="image/png" href="/assets/bvideoIcon-NjSUx-qQ.png">
+  <title>BlackVideo - Official Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/BlackBlazent/BlackVideo">
+<meta property="og:title" content="BlackVideo - Versatile Empowered Video Player | Integrated Media Experience">
+<meta property="og:description" content="A modern, customizable, and advanced video player with features like resolution switching, subtitles, audio tools, and more.">
+<meta property="og:image" content="https://github.com/BlackBlazent/BlackVideo/assets/preview.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://github.com/BlackBlazent/BlackVideo">
+<meta property="twitter:title" content="BlackVideo - Versatile Empowered Video Player">
+<meta property="twitter:description" content="A powerful video player with integrated tools for resolution, captions, playback control, and more.">
+<meta property="twitter:image" content="https://github.com/BlackBlazent/BlackVideo/assets/preview.png">
+  <script src="https://cdn.counter.dev/script.js" data-id="1612048a-c7e0-4b02-8df6-ae6738e09b1b" data-utcoffset="8"></script>
+  <script type="application/ld+json">
+     {
+       "@context": "https://schema.org",
+       "@type": "SoftwareApplication",
+       "name": "BlackVideo",
+       "operatingSystem": "Windows, macOS, Linux, Android, iOS",
+       "applicationCategory": "MultimediaApplication",
+       "description": "A versatile, high-performance video player for desktop and mobile, with support for advanced playback controls, subtitles, and media enhancements.",
+       "url": "https://github.com/BlackBlazent/BlackVideo",
+       "publisher": {
+         "@type": "Organization",
+         "name": "BlackBlazent"
+       }
+     }
+     </script>     
+   <script type="module" crossorigin src="/assets/index-BRZ6qc4Q.js"></script>
+   <link rel="stylesheet" crossorigin href="/assets/index-DU08zsCV.css">
+ </head>
+ <body class="bg-gray-900 text-gray-300 min-h-screen flex flex-col">
+  <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+   <nav class="container mx-auto flex flex-wrap items-center justify-between p-4">
+    <a class="text-2xl font-bold text-white flex items-center space-x-2" href="#home">
+     <i class="CentricSiteLogo"><img class="blackvideo-centricSite-logoBrand" src="/assets/bvideoIcon.png" alt="BlackVideo Icon"/></i>
+     <span>BlackVideo</span>
+    </a>
+    <input class="hidden" id="menu-toggle" type="checkbox"/>
+    <label class="cursor-pointer md:hidden block text-gray-400" for="menu-toggle">
+     <i class="fas fa-bars text-2xl"></i>
+    </label>
+    <!-- Refactored Theme Toggle Button -->
+    <button id="theme-toggle" class="p-3 rounded-full bg-gray-700 hover:bg-gray-600 text-yellow-300 hover:text-yellow-200 transition-all duration-300 shadow-lg hover:shadow-xl" aria-label="Toggle Theme">
+      <i id="theme-icon" class="fas fa-moon text-lg"></i>
+    </button>
+    <div class="w-full md:flex md:items-center md:w-auto hidden md:space-x-8 mt-4 md:mt-0" id="menu">
+     <a class="block py-2 px-3 rounded hover:bg-indigo-600 hover:text-white transition" href="#home">Home</a>
+     <a class="block py-2 px-3 rounded hover:bg-indigo-600 hover:text-white transition" href="#download">Download</a>
+     <a class="block py-2 px-3 rounded hover:bg-indigo-600 hover:text-white transition" href="#features">Features</a>
+     <a class="block py-2 px-3 rounded hover:bg-indigo-600 hover:text-white transition" href="#support">Support</a>
+     <a class="block py-2 px-3 rounded hover:bg-indigo-600 hover:text-white transition" href="#about">About Us</a>
+     <a class="block py-2 px-3 rounded hover:bg-indigo-600 hover:text-white transition" href="#privacy">Privacy Policy</a>
+     <a class="block py-2 px-3 rounded hover:bg-indigo-600 hover:text-white transition" href="#terms">Terms of Service</a>
+    </div>
+   </nav>
+  </header>
+  <main class="flex-grow">
+   <!-- Homepage -->
+   <section class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between gap-12" id="home">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+      BlackVideo
+      <br/>
+      <span class="text-indigo-500">Your Ultimate Video Experience</span>
+     </h1>
+     <p class="text-gray-400 text-lg mb-8">
+      Discover a sleek, powerful, and privacy-focused video player app that
+          brings your media to life with unmatched clarity and speed.
+     </p>
+     <a class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition" href="#download">
+      Download Now
+     </a>
+     <div aria-label="Site visitor counter" class="mt-8 inline-flex items-center space-x-3 text-gray-400 text-sm font-mono">
+      <i class="fas fa-users text-indigo-500">
+      </i>
+      <span>
+       Visitors:
+      </span>
+      <span class="font-bold text-indigo-400" id="visitor-count">
+       0
+      </span>
+     </div>
+    </div>
+    <div class="md:w-1/2 flex flex-col space-y-6">
+     <img alt="BlackVideo app screenshot showing the main video player interface with dark theme and playback controls" class="rounded-lg shadow-lg mx-auto md:mx-0" height="340" loading="lazy" src="/assets/others/presentation_1.png" width="600"/>
+     <img alt="BlackVideo app screenshot showing video library and playlist management with dark UI" class="rounded-lg shadow-lg mx-auto md:mx-0" height="340" loading="lazy" src="/assets/others/presentation_2.png" width="600"/>
+    </div>
+   </section>
+   <!-- Download Page -->
+   <section aria-label="Download BlackVideo app for multiple platforms" class="bg-gray-800 py-16 px-6" id="download">
+    <div class="container mx-auto max-w-5xl text-center">
+     <h2 class="text-4xl font-extrabold text-white mb-8">
+      Download BlackVideo
+     </h2>
+     <p class="text-gray-400 mb-12 max-w-xl mx-auto">
+      Choose your platform below to get the latest version of BlackVideo.
+     </p>
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-4xl mx-auto" role="list">
+          
+      <!-- Windows -->
+      <div class="bg-gray-700 rounded-lg p-6 flex flex-col items-center shadow-lg" role="listitem">
+       <img alt="Windows logo in white on black background" class="mb-4" height="120" loading="lazy" src="https://cdn-icons-png.freepik.com/512/732/732225.png?uid=R54802347&ga=GA1.1.1324284911.1721478908" width="120"/>
+       <h3 class="text-xl font-semibold text-white mb-2">Windows</h3>
+       <a id="download-stats-windows" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition mb-3" href="#">Download</a>
+       <div class="text-indigo-400 font-mono text-sm">Downloads:<span id="count-windows">12,345</span></div>
+      </div>
+      <!-- Mac -->
+      <div class="bg-gray-700 rounded-lg p-6 flex flex-col items-center shadow-lg" role="listitem">
+       <img alt="Apple Mac logo in white on black background" class="mb-4" height="120" loading="lazy" src="https://camo.githubusercontent.com/4ba00ca239b2326ea65b9c39fd7b4e6c93440249db1d24c37d7e1bc075a6d7cf/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f632f63392f46696e6465725f49636f6e5f6d61634f535f4269675f5375722e706e673f3230323030373034313735333139" width="120"/>
+       <h3 class="text-xl font-semibold text-white mb-2">Mac</h3>
+       <a id="download-stats-mac" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition mb-3" href="#">Download</a>
+       <div class="text-indigo-400 font-mono text-sm">Downloads:<span id="count-mac">9,876</span></div>
+      </div>
+      <!-- Linux -->
+      <div class="bg-gray-700 rounded-lg p-6 flex flex-col items-center shadow-lg" role="listitem">
+       <img alt="Linux penguin logo in white on black background" class="mb-4" height="120" loading="lazy" src="https://cdn-icons-png.freepik.com/512/6124/6124995.png?uid=R54802347&ga=GA1.1.1324284911.1721478908" width="120"/>
+       <h3 class="text-xl font-semibold text-white mb-2">Linux</h3>
+       <a id="download-stats-linux" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition mb-3" href="#">Download</a>
+       <div class="text-indigo-400 font-mono text-sm">Downloads:<span id="count-linux">7,654</span></div>
+      </div>
+      <!-- Android -->
+      <div class="bg-gray-700 rounded-lg p-6 flex flex-col items-center shadow-lg" role="listitem">
+       <img alt="Android robot logo in white on black background" class="mb-4" height="120" loading="lazy" src="https://private-user-images.githubusercontent.com/93658802/313473874-4bda63de-cd31-4d34-8afc-00f445fe66b6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA0MjE3NjgsIm5iZiI6MTc1MDQyMTQ2OCwicGF0aCI6Ii85MzY1ODgwMi8zMTM0NzM4NzQtNGJkYTYzZGUtY2QzMS00ZDM0LThhZmMtMDBmNDQ1ZmU2NmI2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjIwVDEyMTEwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc2OTYxNzY5OTEzYTZkMGFjNDQ5ZmRkYmIxOWJiNWUyMGJlYmI3ZGM3N2U2ZTkzZDg1OWExNzhjMWY1MTFjYWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ve0eUzjPMNeG1vTLBP8fNYoRKeUbqy5adBm2uLPfHNc" width="120"/>
+       <h3 class="text-xl font-semibold text-white mb-2">Android</h3>
+       <a id="download-stats-android" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition mb-3" href="#">Download</a>
+       <div class="text-indigo-400 font-mono text-sm mb-3">Downloads:<span id="count-android">15,432</span></div>
+       <img alt="QR code for downloading BlackVideo Android app" class="w-24 h-24 mx-auto" height="100" loading="lazy" src="" width="100"/>
+      </div>
+      <!-- iOS -->
+      <div class="bg-gray-700 rounded-lg p-6 flex flex-col items-center shadow-lg" role="listitem">
+       <img alt="Apple iOS logo in white on black background" class="mb-4" height="120" loading="lazy" src="https://private-user-images.githubusercontent.com/93658802/313473890-a7cbc065-4ef7-4bf7-a633-1e8e631717ff.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA0MjE3NjgsIm5iZiI6MTc1MDQyMTQ2OCwicGF0aCI6Ii85MzY1ODgwMi8zMTM0NzM4OTAtYTdjYmMwNjUtNGVmNy00YmY3LWE2MzMtMWU4ZTYzMTcxN2ZmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA2MjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNjIwVDEyMTEwOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4NTRmYTMxZmI0MzkzN2Q4OGM3YWNkODlhNzg2YzMzYmViNmYzZGU3Nzk5M2IzZjViYmZiYTZhY2ZmNjM3MTkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xmhlQDkl_1uW-GSaofo9KLOQDY4BfWFlmjk0qJre0N8" width="120"/>
+       <h3 class="text-xl font-semibold text-white mb-2">iOS</h3>
+       <a id="download-stats-ios" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition mb-3" href="#">Download</a>
+       <div class="text-indigo-400 font-mono text-sm mb-3">Downloads:<span id="count-ios">11,987</span></div>
+       <img alt="QR code for downloading BlackVideo iOS app" class="w-24 h-24 mx-auto" height="100" loading="lazy" src="" width="100"/>
+      </div>
+
+     </div>
+    </div>
+   </section>
+   <!-- Features Page -->
+   <section aria-label="Features of BlackVideo app" class="container mx-auto px-6 py-16 max-w-6xl" id="features">
+    <h2 class="text-4xl font-extrabold text-white text-center mb-12">
+     Features &amp; Benefits
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+     <div class="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <img alt="Visual representation of ultra-fast video playback with smooth controls" class="mb-6 rounded-lg" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c53e9088-14fc-4664-e0bc-c40463e8cd87.jpg" width="140"/>
+      <h3 class="text-xl font-semibold text-indigo-400 mb-3">
+       Ultra-Fast Playback
+      </h3>
+      <p class="text-gray-400">
+       Experience smooth, lag-free video playback with advanced hardware
+            acceleration.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <img alt="Visual showing customizable dark-themed user interface with multiple skins" class="mb-6 rounded-lg" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8cb10b70-a0de-4c2a-2f6f-95f027f8ded9.jpg" width="140"/>
+      <h3 class="text-xl font-semibold text-indigo-400 mb-3">
+       Customizable UI
+      </h3>
+      <p class="text-gray-400">
+       Tailor the app’s look and feel with multiple themes and layout
+            options.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <img alt="Visual illustrating privacy shield protecting user data and video content" class="mb-6 rounded-lg" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1da3546e-7913-4cbb-319a-5299b61057cc.jpg" width="140"/>
+      <h3 class="text-xl font-semibold text-indigo-400 mb-3">
+       Privacy First
+      </h3>
+      <p class="text-gray-400">
+       Your data stays private. No tracking, no ads, and full control over
+            your content.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <img alt="Visual showing multi-format video support icons including mp4, mkv, avi" class="mb-6 rounded-lg" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e4289d6e-02a3-4781-c38c-21acccc30c5a.jpg" width="140"/>
+      <h3 class="text-xl font-semibold text-indigo-400 mb-3">
+       Multi-Format Support
+      </h3>
+      <p class="text-gray-400">
+       Play virtually any video format without the need for extra codecs.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <img alt="Visual showing playlist and library management with drag and drop" class="mb-6 rounded-lg" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/186a88f6-b5e9-419a-126f-1df266590782.jpg" width="140"/>
+      <h3 class="text-xl font-semibold text-indigo-400 mb-3">
+       Playlist &amp; Library
+      </h3>
+      <p class="text-gray-400">
+       Organize your videos easily with smart playlists and library
+            management.
+      </p>
+     </div>
+     <div class="bg-gray-800 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <img alt="Visual showing cross-platform sync and cloud backup icons" class="mb-6 rounded-lg" height="140" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5467aa6b-d4e2-450d-e756-a6a955e161e7.jpg" width="140"/>
+      <h3 class="text-xl font-semibold text-indigo-400 mb-3">
+       Cross-Platform Sync
+      </h3>
+      <p class="text-gray-400">
+       Sync your settings and playlists across all your devices seamlessly.
+      </p>
+     </div>
+    </div>
+    <h3 class="text-3xl font-extrabold text-white text-center mt-20 mb-10">
+     What Our Users Say
+    </h3>
+    <div class="max-w-4xl mx-auto space-y-8">
+     <blockquote class="bg-gray-800 rounded-lg p-6 shadow-lg">
+      <p class="text-gray-300 italic mb-4">
+       "BlackVideo transformed how I watch videos on my devices. The
+            privacy features and smooth playback are unmatched."
+      </p>
+      <footer class="text-indigo-400 font-semibold">
+       – Alex M.
+      </footer>
+     </blockquote>
+     <blockquote class="bg-gray-800 rounded-lg p-6 shadow-lg">
+      <p class="text-gray-300 italic mb-4">
+       "Finally, a video player that respects my privacy and looks amazing
+            in dark mode!"
+      </p>
+      <footer class="text-indigo-400 font-semibold">
+       – Priya S.
+      </footer>
+     </blockquote>
+     <blockquote class="bg-gray-800 rounded-lg p-6 shadow-lg">
+      <p class="text-gray-300 italic mb-4">
+       "The cross-platform sync keeps my playlists up to date everywhere.
+            Highly recommend BlackVideo."
+      </p>
+      <footer class="text-indigo-400 font-semibold">
+       – Jamal R.
+      </footer>
+     </blockquote>
+    </div>
+   </section>
+   <!-- Support Page -->
+   <section aria-label="Support and FAQ for BlackVideo" class="bg-gray-800 py-16 px-6" id="support">
+    <div class="container mx-auto max-w-4xl">
+     <h2 class="text-4xl font-extrabold text-white mb-10 text-center">
+      Support &amp; FAQs
+     </h2>
+     <div class="space-y-6">
+      <details class="bg-gray-700 rounded-lg p-5 shadow-lg" open="">
+       <summary class="cursor-pointer font-semibold text-indigo-400 text-lg">
+        How do I install BlackVideo on my device?
+       </summary>
+       <p class="mt-3 text-gray-300">
+        Visit the Download page, select your platform, and follow the
+              installation instructions provided.
+       </p>
+      </details>
+      <details class="bg-gray-700 rounded-lg p-5 shadow-lg">
+       <summary class="cursor-pointer font-semibold text-indigo-400 text-lg">
+        Is BlackVideo free to use?
+       </summary>
+       <p class="mt-3 text-gray-300">
+          Yes, BlackVideo is free to use with no essential features locked behind a paywall. While premium playback features are available, they are optional and not critical for everyday use. Ads may appear, but they are minimal and carefully managed to avoid disrupting your experience. Subscriptions are entirely up to the user and are only needed for accessing advanced playback enhancements.
+       </p>
+      </details>
+      <details class="bg-gray-700 rounded-lg p-5 shadow-lg">
+       <summary class="cursor-pointer font-semibold text-indigo-400 text-lg">
+        How do I report a bug or request a feature?
+       </summary>
+       <p class="mt-3 text-gray-300">
+        You can contact our support team via email or join our community
+              forum to share your feedback.
+       </p>
+      </details>
+      <details class="bg-gray-700 rounded-lg p-5 shadow-lg">
+       <summary class="cursor-pointer font-semibold text-indigo-400 text-lg">
+        Does BlackVideo collect my personal data?
+       </summary>
+       <p class="mt-3 text-gray-300">
+          BlackVideo does not collect any personal data directly. However, certain features within the app may rely on third-party services (such as APIs or embedded tools), which may access limited user data as required for their functionality. Any data accessed through these services is handled according to their respective privacy policies. For more details, please review our [Privacy Policy].
+       </p>
+      </details>
+     </div>
+     <div class="mt-12 text-center text-gray-400">
+      <p>
+       Need more help? Contact us at
+       <a class="text-indigo-500 hover:underline" href="mailto:blackblazent.dev@gmail.com">
+          blackblazent.dev@gmail.com
+       </a>
+      </p>
+      <p class="mt-4">
+       Join our community forum:
+       <a class="text-indigo-500 hover:underline" href="https://discord.gg/tKFBwYuS" rel="noopener noreferrer" target="_blank">
+        Discord
+       </a>
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- About Us Page -->
+   <section aria-label="About BlackVideo team and mission" class="container mx-auto px-6 py-16 max-w-4xl" id="about">
+    <h2 class="text-4xl font-extrabold text-white mb-10 text-center">
+     About Us
+    </h2>
+    <div class="flex flex-col md:flex-row items-center gap-10">
+     <img alt="Photo of the BlackVideo development team in a modern office environment" class="rounded-lg shadow-lg w-72 mx-auto md:mx-0" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a50081e0-d85c-4676-6f61-4003e74920c4.jpg" width="300"/>
+     <div class="text-gray-300 max-w-xl">
+      <p class="mb-6 text-lg">
+       BlackVideo is developed by a passionate team of software engineers,
+            designers, and privacy advocates dedicated to delivering the best
+            video experience without compromising your data.
+      </p>
+      <h3 class="text-2xl font-semibold text-indigo-400 mb-4">
+       Our Mission
+      </h3>
+      <p class="mb-6">
+       To empower users worldwide with a fast, secure, and intuitive video
+            player that respects privacy and enhances entertainment.
+      </p>
+      <h3 class="text-2xl font-semibold text-indigo-400 mb-4">
+       Contact Us
+      </h3>
+      <p>
+       Email:
+       <a class="text-indigo-500 hover:underline" href="mailto:blackblazent.info@gmail.com">
+          blackblazent.info@gmail.com
+       </a>
+      </p>
+      <p>
+       Telegram:
+       <a class="text-indigo-500 hover:underline" href="https://t.me/+g3J3-sApBIAwOWl1" rel="noopener noreferrer" target="_blank">
+        BlackBlazent
+       </a>
+      </p>
+      <p>
+       Address:
+       <span class="text-gray-400">
+        N/A
+       </span>
+      </p>
+     </div>
+    </div>
+   </section>
+   <!-- Privacy Policy -->
+   <section aria-label="Privacy Policy of BlackVideo" class="bg-gray-800 py-16 px-6" id="privacy">
+    <div class="container mx-auto max-w-4xl text-gray-300">
+     <h2 class="text-4xl font-extrabold text-white mb-8 text-center">
+      Privacy Policy
+     </h2>
+     <p class="mb-6">
+          At BlackVideo, your privacy is our priority. We are committed to protecting your personal information and ensuring transparency about how it is used.
+     </p>
+     <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Information We Collect</h3>
+     <p class="mb-6">
+      To provide personalized features, BlackVideo requires user registration. You may register using a native email/password or through third-party login services such as Google, Facebook, or GitHub. When registering, we collect basic account information such as your email address and display name. For third-party logins, we may also access profile details permitted by those services (e.g., profile image, name).
+     </p>
+     <h3 class="text-2xl font-semibold text-indigo-400 mb-4">How We Use Your Information</h3>
+     <p class="mb-6">
+      - To manage your account and authentication
+      <br>
+      - To personalize your experience and retain your settings
+      <br>
+      - To support features such as syncing, stats tracking, and optional cloud-based preferences
+      <br>
+     </p>
+     <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Third-Party Services</h3>
+     <p class="mb-6">
+      BlackVideo integrates certain third-party services (such as APIs for language translation, scripture data, video stats, etc.) that may temporarily access information necessary for functionality. These third parties handle data according to their own privacy policies.
+      We do not sell or share your personal data with advertisers. Ads within BlackVideo are limited, controlled, and designed to avoid disrupting your experience.
+     </p>
+     <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Local & Offline Data</h3>
+     <p class="mb-6">
+      Your video content and playback history are stored locally on your device. BlackVideo does not upload or analyze your local files.
+     </p>
+     <h3 class="text-2xl font-semibold text-indigo-400 mb-4">Your Choices</h3>
+     <p class="mb-6">
+      - You may delete your account and data at any time
+      <br>
+      - You can choose to opt out of optional third-party services (where available)
+      <br>
+      - You have full control over app settings and can limit ad display
+     </p>
+     <p class="mb-6">
+      For any questions regarding privacy, please contact us at
+      <a class="text-indigo-500 hover:underline" href="mailto:blackblazent.customer.service@gmail.com">
+          blackblazent.customer.service@gmail.com
+      </a>
+      .
+     </p>
+     <p>
+      This policy is effective as of June 2024 and may be updated from time
+          to time.
+     </p>
+    </div>
+   </section>
+   <!-- Terms of Service -->
+   <section aria-label="Terms of Service of BlackVideo" class="container mx-auto px-6 py-16 max-w-4xl text-gray-300" id="terms">
+    <h2 class="text-4xl font-extrabold text-white mb-8 text-center">
+     Terms of Service
+    </h2>
+    <p class="mb-6">
+     By downloading and using BlackVideo, you agree to the following terms:
+    </p>
+    <ul class="list-disc list-inside mb-6 space-y-2">
+     <li>
+      BlackVideo is provided "as is" without warranties of any kind,
+          express or implied.
+     </li>
+     <li>
+      You are responsible for complying with all applicable laws regarding
+          the use of video content.
+     </li>
+     <li>
+      We do not claim ownership of any content you play or manage with the
+          app.
+     </li>
+     <li>
+      Redistribution or commercial use of BlackVideo without permission is
+          prohibited.
+     </li>
+     <li>
+      We reserve the right to update or modify these terms at any time.
+     </li>
+    </ul>
+    <p>For questions or concerns, please contact us at
+     <a class="text-indigo-500 hover:underline" href="mailto:blackblazent.legal@gmail.com">blackblazent.legal@gmail.com</a>.</p>
+   </section>
+  </main>
+  <footer class="bg-gray-900 text-gray-500 py-8 mt-16">
+   <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <p class="copyright-holder">© <span id="year"></span> BlackVideo. All rights reserved.</p>
+    <div class="flex space-x-6 text-xl">
+     <a aria-label="Facebook" class="hover:text-indigo-500 transition" href="https://www.facebook.com/profile.php?id=61565193375253" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-facebook">
+      </i>
+     </a>
+     <a aria-label="GitHub" class="hover:text-indigo-500 transition" href="https://github.com/BlackBlazent/BlackVideo" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-github">
+      </i>
+     </a>
+     <a aria-label="Email" class="hover:text-indigo-500 transition" href="mailto:blackblazent@gmail.com">
+      <i class="fas fa-envelope">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    menuToggle.addEventListener('change', () => {
+      if (menuToggle.checked) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+
+    // Simple visitor counter using localStorage (for demo only)
+    const visitorCountEl = document.getElementById('visitor-count');
+    const visitorCountKey = 'blackvideo_visitor_count';
+    let visitorCount = localStorage.getItem(visitorCountKey);
+    if (!visitorCount) {
+      visitorCount = 1;
+    } else {
+      visitorCount = parseInt(visitorCount) + 1;
+    }
+    localStorage.setItem(visitorCountKey, visitorCount);
+    visitorCountEl.textContent = visitorCount.toLocaleString();
+
+    // Download counters (static demo values)
+    document.getElementById('count-windows').textContent = '12,345';
+    document.getElementById('count-mac').textContent = '9,876';
+    document.getElementById('count-linux').textContent = '7,654';
+    document.getElementById('count-android').textContent = '15,432';
+    document.getElementById('count-ios').textContent = '11,987';
+  </script>
+  <!--Copyright Holder Auto Update Year-->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <!--Theme Toggle-->
+  <script>
+    class ThemeToggle {
+        constructor() {
+            this.toggleBtn = document.getElementById('theme-toggle');
+            this.icon = document.getElementById('theme-icon');
+            this.html = document.documentElement;
+            this.body = document.body;
+            
+            // Theme states
+            this.themes = {
+                dark: {
+                    icon: 'fa-moon',
+                    class: '',
+                    label: 'Switch to Light Mode'
+                },
+                light: {
+                    icon: 'fa-sun',
+                    class: 'light-theme',
+                    label: 'Switch to Dark Mode'
+                }
+            };
+            
+            this.currentTheme = 'dark'; // Default to dark theme
+            
+            this.init();
+        }
+        
+        init() {
+            // Load saved preference or default to dark
+            const savedTheme = this.getSavedTheme();
+            this.setTheme(savedTheme);
+            
+            // Add event listener
+            this.toggleBtn.addEventListener('click', () => this.toggle());
+            
+            // Listen for system theme changes (optional)
+            this.watchSystemTheme();
+        }
+        
+        getSavedTheme() {
+            const saved = localStorage.getItem('blackvideo-theme');
+            if (saved && this.themes[saved]) {
+                return saved;
+            }
+            
+            // Default to dark theme (matching your design)
+            return 'dark';
+        }
+        
+        setTheme(theme) {
+            if (!this.themes[theme]) return;
+            
+            const themeConfig = this.themes[theme];
+            
+            // Remove all theme classes
+            Object.values(this.themes).forEach(config => {
+                if (config.class) {
+                    this.html.classList.remove(config.class);
+                }
+            });
+            
+            // Apply new theme
+            if (themeConfig.class) {
+                this.html.classList.add(themeConfig.class);
+            }
+            
+            // Update icon
+            this.updateIcon(theme);
+            
+            // Update button accessibility
+            this.toggleBtn.setAttribute('aria-label', themeConfig.label);
+            
+            // Save preference
+            localStorage.setItem('blackvideo-theme', theme);
+            
+            this.currentTheme = theme;
+            
+            // Dispatch custom event for other components
+            window.dispatchEvent(new CustomEvent('themeChanged', { 
+                detail: { theme } 
+            }));
+        }
+        
+        updateIcon(theme) {
+            const themeConfig = this.themes[theme];
+            
+            // Remove all theme icons
+            Object.values(this.themes).forEach(config => {
+                this.icon.classList.remove(config.icon);
+            });
+            
+            // Add current theme icon
+            this.icon.classList.add(themeConfig.icon);
+            
+            // Add a subtle animation
+            this.icon.style.transform = 'rotate(360deg)';
+            setTimeout(() => {
+                this.icon.style.transform = '';
+            }, 300);
+        }
+        
+        toggle() {
+            const newTheme = this.currentTheme === 'dark' ? 'light' : 'dark';
+            this.setTheme(newTheme);
+        }
+        
+        watchSystemTheme() {
+            // Optional: Listen for system theme changes
+            const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            mediaQuery.addEventListener('change', (e) => {
+                // Only auto-switch if user hasn't manually set a preference
+                if (!localStorage.getItem('blackvideo-theme')) {
+                    this.setTheme(e.matches ? 'dark' : 'light');
+                }
+            });
+        }
+        
+        // Public methods for external use
+        getCurrentTheme() {
+            return this.currentTheme;
+        }
+        
+        isDarkMode() {
+            return this.currentTheme === 'dark';
+        }
+    }
+    
+    // Initialize when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        window.themeToggle = new ThemeToggle();
+    });
+    
+    // Example of listening to theme changes
+    window.addEventListener('themeChanged', (e) => {
+        console.log('Theme changed to:', e.detail.theme);
+        
+        // You can add custom logic here for theme-specific features
+        if (e.detail.theme === 'dark') {
+            // Dark theme specific code
+            document.title = 'BlackVideo - Dark Mode';
+        } else {
+            // Light theme specific code
+            document.title = 'BlackVideo - Light Mode';
+        }
+    });
+</script>
+  <script src="./src/dev/global/title_bar.js"></script>
+ </body>
+</html>
