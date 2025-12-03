@@ -1,4 +1,4 @@
-![Logo](https://github.com/BlackBlazent/BlackVideo/blob/blackvideo-master/.github/repo_assets/BlackVideoBanner.png?raw=true)
+<img width="1920" height="859" alt="Screenshot 2025-12-03 at 19-37-44 BlackVideo (Zephyra) - Next-Gen Video Player" src="https://github.com/user-attachments/assets/f6208a08-cbc9-4654-b8bc-f87634ce567b" />
 
 # **Appname:** *BlackVideo*  
 ## **Codename:** *zephyra*  
