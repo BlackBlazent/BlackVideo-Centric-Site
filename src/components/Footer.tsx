@@ -213,7 +213,7 @@ const Footer = () => {
             <span>Powered by</span>
             <span className="font-semibold text-foreground">FFmpeg</span>
             <span className="text-border">•</span>
-            <span>Open Source ❤️</span>
+            <span></span>
           </div>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} BlackBlazent. All rights reserved.

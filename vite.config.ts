@@ -10,6 +10,11 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './test/setup.ts', // We will create this next
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

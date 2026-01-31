@@ -108,7 +108,7 @@ const DownloadPage = () => {
 
                   <button onClick={() => handleDownload(platform.name)} className="btn-neon w-full flex items-center justify-center gap-2 mb-4">
                     <DownloadIcon className="w-5 h-5" />
-                    {btnState[platform.name] || `Download for ${platform.name}`}
+                    {btnState[platform.name] || `Not Available ${platform.name}`}
                   </button>
 
                   <button
@@ -153,7 +153,7 @@ const DownloadPage = () => {
                     onClick={() => handleDownload(platform.name)} 
                     className="btn-ghost-glow text-sm px-4 py-2"
                   >
-                    {btnState[platform.name] || 'Get App'}
+                    {btnState[platform.name] || 'Not Available'}
                   </button>
                 </div>
               );

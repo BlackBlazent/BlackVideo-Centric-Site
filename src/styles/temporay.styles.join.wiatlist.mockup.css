@@ -1,0 +1,31 @@
+#temp-waitlist-mockup {
+    display: none;
+}
+
+#not-available, a {
+    cursor: not-allowed;
+    pointer-events: none; /* This stops all click, hover, and active states */
+    opacity: 0.5;
+}
+
+/* Remove the @layer utilities { ... } wrapper */
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.parallax-scroll {
+  transform: translateY(var(--scroll-offset, 0));
+  will-change: transform;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.glass-panel {
+  background: hsl(var(--glass-bg));
+  border: 1px solid hsl(var(--glass-border));
+  backdrop-filter: blur(8px);
+}

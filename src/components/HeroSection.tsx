@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Play, Download, ChevronRight, Sparkles } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import ExclusiveLaunchTemplate from "../components/ui/exclusive-launch-template-temporary";
+import EmbedHosted from "../components/ui/hosted-embed-ui";
+import '../styles/temporay.styles.join.wiatlist.mockup.css'
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,7 +27,8 @@ const HeroSection = () => {
             }`}
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Early Access Available</span>
+            {/*Early Access Available*/}
+            <span className="text-sm font-medium">Be on the Waitlist Below!</span>
             <ChevronRight className="w-4 h-4 text-muted-foreground" />
           </div>
 
@@ -40,7 +44,7 @@ const HeroSection = () => {
 
           {/* Tagline */}
           <p
-            className={`text-2xl md:text-3xl font-display font-light text-muted-foreground mb-4 transition-all duration-700 delay-200 ${
+            id="temp-waitlist-mockup" className={`text-2xl md:text-3xl font-display font-light text-muted-foreground mb-4 transition-all duration-700 delay-200 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
@@ -63,9 +67,13 @@ const HeroSection = () => {
             Experience advanced playback tools, intelligent utilities, and a powerful modular extension system.
           </p>
 
+          {/* The Exclusive Launch Section */}
+          <ExclusiveLaunchTemplate />
+          {/* Visual Proof (Canva Design) */}
+          <EmbedHosted />
           {/* CTA Buttons */}
           <div
-            className={`flex flex-col sm:flex-row gap-4 justify-center mb-16 transition-all duration-700 delay-400 ${
+            id="temp-waitlist-mockup" className={`flex flex-col sm:flex-row gap-4 justify-center mb-16 transition-all duration-700 delay-400 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
@@ -81,11 +89,11 @@ const HeroSection = () => {
 
           {/* Hero Visual */}
           <div
-            className={`relative transition-all duration-1000 delay-500 ${
+            id="temp-waitlist-mockup" className={`relative transition-all duration-1000 delay-500 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            <div className="relative glass-card p-2 rounded-2xl overflow-hidden gradient-border">
+            <div id="temp-waitlist-mockup" className="relative glass-card p-2 rounded-2xl overflow-hidden gradient-border">
               <div className="aspect-video bg-gradient-to-br from-muted/50 to-card rounded-xl overflow-hidden relative">
                 {/* Mock Video Player UI */}
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -95,7 +103,7 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Mock Player Controls */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background/80 to-transparent">
+                <div id="temp-waitlist-mockup" className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background/80 to-transparent">
                   <div className="flex items-center gap-4">
                     <div className="w-full h-1 bg-muted rounded-full overflow-hidden">
                       <div className="h-full w-1/3 bg-gradient-to-r from-primary to-secondary rounded-full" />
@@ -105,7 +113,7 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Mock Sidebar */}
-                <div className="absolute top-4 right-4 glass rounded-lg p-3 space-y-2">
+                <div id="temp-waitlist-mockup" className="absolute top-4 right-4 glass rounded-lg p-3 space-y-2">
                   <div className="w-6 h-6 rounded bg-primary/20" />
                   <div className="w-6 h-6 rounded bg-muted" />
                   <div className="w-6 h-6 rounded bg-muted" />
@@ -120,7 +128,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div id="temp-waitlist-mockup" className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-2">
           <div className="w-1 h-2 bg-muted-foreground/50 rounded-full animate-pulse" />
         </div>

@@ -6,44 +6,52 @@ import {
   Puzzle, 
   Shield, 
   Sparkles,
-  ChevronRight 
+  ChevronRight, 
+  Cpu,
+  Microchip
 } from 'lucide-react';
 
 const features = [
   {
-    icon: Play,
+    icon: 'https://cdn-icons-png.freepik.com/256/16453/16453852.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
     title: 'Advanced Playback',
     description: 'Smooth playback with full codec and format support. Experience crystal-clear video quality.',
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
-    icon: Zap,
+    icon: 'https://cdn-icons-png.freepik.com/256/740/740845.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
     title: 'Lightning Fast',
     description: 'Optimized for instant loading and seamless streaming. No buffering, no waiting.',
     gradient: 'from-yellow-500 to-orange-500',
   },
   {
-    icon: Settings,
+    icon: 'https://cdn-icons-png.freepik.com/256/17600/17600703.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
     title: 'Customizable Controls',
     description: 'Fully personalized player interface. Make it yours with themes, layouts, and shortcuts.',
     gradient: 'from-purple-500 to-pink-500',
   },
   {
-    icon: Puzzle,
+    icon: 'https://cdn-icons-png.freepik.com/256/226/226902.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
     title: 'Extension System',
     description: 'Modular ecosystem for limitless expansion. Install extensions from the marketplace.',
     gradient: 'from-green-500 to-emerald-500',
   },
   {
-    icon: Shield,
+    icon: 'https://cdn-icons-png.freepik.com/256/17963/17963033.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
     title: 'Privacy First',
     description: 'Built-in encryption and zero-tracking policy. Your data stays with you.',
     gradient: 'from-red-500 to-rose-500',
   },
   {
-    icon: Sparkles,
+    icon: 'https://cdn-icons-png.freepik.com/256/16937/16937211.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
     title: 'AI-Powered',
     description: 'Auto-subtitles, smart recommendations, and AI utilities. The future of video playback.',
+    gradient: 'from-indigo-500 to-cyan-500',
+  },
+  {
+    icon: 'https://cdn-icons-png.freepik.com/256/13891/13891886.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
+    title: 'MCP Integration',
+    description: 'Provides MCP server tools to support more video tools capabilities.',
     gradient: 'from-indigo-500 to-violet-500',
   },
 ];
@@ -103,7 +111,8 @@ const FeaturesSection = () => {
               {/* Icon */}
               <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${feature.gradient} p-0.5 mb-5`}>
                 <div className="w-full h-full rounded-xl bg-card flex items-center justify-center group-hover:bg-transparent transition-colors">
-                  <feature.icon className="w-6 h-6 text-foreground group-hover:text-foreground transition-colors" />
+                  {/*<feature.icon className="w-6 h-6 text-foreground group-hover:text-foreground transition-colors" />*/}
+                  <img src={feature.icon} alt="" className="w-6 h-6 object-contain transition-colors" />
                 </div>
               </div>
 

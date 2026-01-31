@@ -80,16 +80,19 @@ const CTASection = () => {
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,black,transparent)]" />
 
             <div className="relative z-10">
+              {/*Ready to Experience the*/}
               <h2 className="section-title mb-4">
-                Ready to Experience the
-                <span className="gradient-text block mt-2">Future of Video?</span>
+                Be the First to Experinece BlackVideo - Coming
+                <span className="gradient-text block mt-2">June 12, 2026!</span>
+                {/*Future of Video?*/}
               </h2>
 
+              {/*Download BlackVideo today and join millions of users who've already upgraded their video playback experience.*/}
               <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-                Download BlackVideo today and join millions of users who've already upgraded their video playback experience.
+                We are developing a workflow-first video environment designed for technical depth and high-performance playback. BlackVideo is built for power users who require precision control and a serious toolset over standard video players.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <div id="temp-waitlist-mockup" className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <Link to="/download" className="btn-neon flex items-center justify-center gap-2 text-lg px-10 py-4">
                   <Download className="w-5 h-5" />
                   Download Free
@@ -102,10 +105,11 @@ const CTASection = () => {
 
               {/* Waitlist Form */}
               <div className="max-w-md mx-auto">
+                {/*Or join the waitlist for exclusive early access to new features*/}
                 <p className="text-sm text-muted-foreground mb-4">
-                  Or join the waitlist for exclusive early access to new features
+                  Join the priority waitlist to receive access credentials and development updates ahead of the June 12 release.
                 </p>
-                
+
                 {/* FORM MODIFIED TO USE REACT STATE AND HANDLER */}
                 <form onSubmit={handleSubmit} className="flex gap-2">
                   <div className="relative flex-1">
