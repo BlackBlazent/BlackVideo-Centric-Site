@@ -210,8 +210,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>Powered by</span>
-            <span className="font-semibold text-foreground">FFmpeg</span>
+            <span>BlackVideo</span>
+            <span className="font-semibold text-foreground">Inc.</span>
             <span className="text-border">•</span>
             <span></span>
           </div>
