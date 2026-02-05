@@ -56,7 +56,7 @@ function FeatureCard({ feature, index }: { feature: any, index: number }) {
           </span>
         </div>
         <div>
-          <span className="text-[30px] font-mono border border-primary/50 text-primary bg-primary/5 px-3 py-1 uppercase tracking-[0.2em] rounded-full inline-block">
+          <span className="text-[18px] md:text-[30px] font-mono border border-primary/50 text-primary bg-primary/5 px-2 md:px-3 py-1 uppercase tracking-[0.1em] md:tracking-[0.2em] rounded-full inline-block">
             {feature.category}
           </span>
         </div>
