@@ -1,58 +1,78 @@
 import { useEffect, useRef, useState } from 'react';
-import { 
-  Play, 
-  Zap, 
-  Settings, 
-  Puzzle, 
-  Shield, 
-  Sparkles,
-  ChevronRight, 
-  Cpu,
-  Microchip
-} from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 const features = [
   {
-    icon: 'https://cdn-icons-png.freepik.com/256/16453/16453852.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
-    title: 'Advanced Playback',
-    description: 'Smooth playback with full codec and format support. Experience crystal-clear video quality.',
+    icon: 'https://cdn-icons-png.freepik.com/256/11491/11491762.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Theater Stage Playback',
+    description: 'Central video player with custom hover utilities, ambient mode, and video flipping capabilities.',
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
-    icon: 'https://cdn-icons-png.freepik.com/256/740/740845.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
-    title: 'Lightning Fast',
-    description: 'Optimized for instant loading and seamless streaming. No buffering, no waiting.',
-    gradient: 'from-yellow-500 to-orange-500',
-  },
-  {
-    icon: 'https://cdn-icons-png.freepik.com/256/17600/17600703.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
-    title: 'Customizable Controls',
-    description: 'Fully personalized player interface. Make it yours with themes, layouts, and shortcuts.',
+    icon: 'https://cdn-icons-png.freepik.com/256/15947/15947030.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: '12 Playground Modes',
+    description: 'Specialized modes: Theater, Movie, Performance, Smooth, Audio, Music Video, Worship, Preach, Live, Study, and Custom.',
     gradient: 'from-purple-500 to-pink-500',
   },
   {
-    icon: 'https://cdn-icons-png.freepik.com/256/226/226902.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
-    title: 'Extension System',
-    description: 'Modular ecosystem for limitless expansion. Install extensions from the marketplace.',
+    icon: 'https://cdn-icons-png.freepik.com/256/10812/10812728.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Advanced Controls',
+    description: 'Precise playback speed, frame rate sync, bitrate adjustment, resolution switching, and aspect ratio controls.',
     gradient: 'from-green-500 to-emerald-500',
   },
   {
-    icon: 'https://cdn-icons-png.freepik.com/256/17963/17963033.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
-    title: 'Privacy First',
-    description: 'Built-in encryption and zero-tracking policy. Your data stays with you.',
+    icon: 'https://cdn-icons-png.freepik.com/256/1055/1055675.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Interactive Heatmap',
+    description: 'YouTube-style engagement graph showing watch patterns, replay zones, and video analytics on timeline.',
+    gradient: 'from-yellow-500 to-orange-500',
+  },
+  {
+    icon: 'https://cdn-icons-png.freepik.com/256/17600/17600703.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Custom Playback Utilities',
+    description: 'Skip intro/outro, sleep timer, ambient mode, video flip, screen cast, and save/share functionality.',
     gradient: 'from-red-500 to-rose-500',
   },
   {
-    icon: 'https://cdn-icons-png.freepik.com/256/16937/16937211.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
-    title: 'AI-Powered',
-    description: 'Auto-subtitles, smart recommendations, and AI utilities. The future of video playback.',
+    icon: 'https://cdn-icons-png.freepik.com/256/226/226902.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Accessories System',
+    description: 'AI Chat Assistant, Magnifying Glass, Frame Capture, Video Recorder, OCR text extraction, and link player.',
+    gradient: 'from-indigo-500 to-violet-500',
+  },
+  {
+    icon: 'https://cdn-icons-png.freepik.com/256/13891/13891886.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Extensions Framework',
+    description: 'VS Code-inspired extension system with marketplace support for limitless playback customization.',
     gradient: 'from-indigo-500 to-cyan-500',
   },
   {
-    icon: 'https://cdn-icons-png.freepik.com/256/13891/13891886.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_white_label',
-    title: 'MCP Integration',
-    description: 'Provides MCP server tools to support more video tools capabilities.',
-    gradient: 'from-indigo-500 to-violet-500',
+    icon: 'https://cdn-icons-png.freepik.com/256/10473/10473283.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Playback Controls Suite',
+    description: 'Timeline scrubbing, closed captions, skip elements, picture-in-picture, and dual fullscreen modes.',
+    gradient: 'from-cyan-500 to-teal-500',
+  },
+  {
+    icon: 'https://cdn-icons-png.freepik.com/256/16453/16453852.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Smart Navigation',
+    description: 'Previous/next controls, playback looping, volume controls with visual feedback, and restart functionality.',
+    gradient: 'from-purple-500 to-indigo-500',
+  },
+  {
+    icon: 'https://cdn-icons-png.freepik.com/256/740/740845.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Performance Modes',
+    description: 'Optimized for smooth playback, reduced resource usage, and high-frame-rate content support.',
+    gradient: 'from-orange-500 to-red-500',
+  },
+  {
+    icon: 'https://cdn-icons-png.freepik.com/256/17963/17963033.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Display Management',
+    description: 'Native and in-app fullscreen modes, picture-in-picture support, and aspect ratio adjustments.',
+    gradient: 'from-pink-500 to-rose-500',
+  },
+  {
+    icon: 'https://cdn-icons-png.freepik.com/256/16937/16937211.png?uid=R224914971&ga=GA1.1.304407073.1764758472&semt=ais_hybrid',
+    title: 'Intelligent Playback',
+    description: 'AI-powered auto-subtitles, smart recommendations, and contextual playback enhancements.',
+    gradient: 'from-green-500 to-blue-500',
   },
 ];
 
@@ -88,15 +108,15 @@ const FeaturesSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="section-title mb-4">
-            Powerful <span className="gradient-text">Features</span>
+            Advanced <span className="gradient-text">Playback Features</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Everything you need for the ultimate video playback experience. Built for power users, loved by everyone.
+            Everything you need for professional video playback: specialized modes, precise controls, AI enhancements, and extensible tools.
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Features Grid - Updated to 4 columns for better display of 12 items */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div
               key={feature.title}
@@ -106,13 +126,12 @@ const FeaturesSection = () => {
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-8'
               }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={{ transitionDelay: `${index * 80}ms` }}
             >
               {/* Icon */}
               <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${feature.gradient} p-0.5 mb-5`}>
                 <div className="w-full h-full rounded-xl bg-card flex items-center justify-center group-hover:bg-transparent transition-colors">
-                  {/*<feature.icon className="w-6 h-6 text-foreground group-hover:text-foreground transition-colors" />*/}
-                  <img src={feature.icon} alt="" className="w-6 h-6 object-contain transition-colors" />
+                  <img src={feature.icon} alt={feature.title} className="w-6 h-6 object-contain transition-colors" />
                 </div>
               </div>
 
