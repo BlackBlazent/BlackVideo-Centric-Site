@@ -111,7 +111,7 @@ const CTASection = () => {
                 </p>
 
                 {/* FORM MODIFIED TO USE REACT STATE AND HANDLER */}
-                <form onSubmit={handleSubmit} className="flex gap-2">
+                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2"> {/*flex gap-2*/}
                   <div className="relative flex-1">
                     <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                     <input
