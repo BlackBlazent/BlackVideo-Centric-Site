@@ -11,16 +11,16 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 {/*Market: Community*/}
 {/*Platform: Sync*/}
 const FEATURES = [
-  { id: "01", label: "", category: "Introduction", title: "The Next-Gen Video OS", description: "AI-powered playback meets developer-grade control. Designed for 10-bit color accuracy.", image: "/assets/mockups/temp.banner.png" }, 
-  { id: "02", label: "", category: "Summary", title: "All-in-One Powerhouse", description: "Seamless integration of AI chat, playback utilities, extensions, and a built-in terminal.", image: "/assets/mockups/temp.banner.png" }, 
-  { id: "03", label: "", category: "Lightweight", title: "Lightning Fast Playback", description: "Zero-bloat architecture optimized for instant 4K and 8K streaming without buffering.", image: "/assets/mockups/temp.banner.png" }, 
-  { id: "04", label: "", category: "Codecs", title: "Native Support", description: "H.265, AV1, and HDR content play natively. No additional codec packs required.", image: "/assets/mockups/temp.banner.png" }, 
-  { id: "05", label: "", category: "Management", title: "Intelligent Organization", description: "Automated media tagging and history synchronization across all your connected devices.", image: "/assets/mockups/temp.banner.png" },
-  { id: "06", label: "", category: "Assisted", title: "Ask Zephyra AI", description: "An integrated assistant that understands your content and provides instant insights.", image: "/assets/mockups/temp.banner.png" },
-  { id: "07", label: "", category: "Playground", title: "Main Theater Stage", description: "The core viewing environment with customizable skins and advanced hardware acceleration.", image: "/assets/mockups/temp.banner.png" },
-  { id: "08", label: "", category: "Extensions", title: "Modular System", description: "Extend your experience with custom playback accessories and unique user-built tools.", image: "/assets/mockups/temp.banner.png" },
-  { id: "09", label: "", category: "Marketplace", title: "Extension Marketplace", description: "Discover and install community-driven themes and power-user utilities with one click.", image: "/assets/mockups/temp.banner.png" },
-  { id: "10", label: "", category: "Cross-Platform", title: "Native Everywhere", description: "Experience consistent performance on Windows, macOS, Linux, and mobile platforms.", image: "/assets/mockups/temp.banner.png" },
+  { id: "01", label: "", category: "Introduction", title: "The Next-Gen Video OS", description: "AI-powered playback meets developer-grade control. Designed for 10-bit color accuracy.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/BlackVideo.gif?raw=true" }, 
+  { id: "02", label: "", category: "Summary", title: "All-in-One Powerhouse", description: "Seamless integration of AI chat, playback utilities, extensions, and a built-in terminal.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/summary.png?raw=true" }, 
+  { id: "03", label: "", category: "Lightweight", title: "Lightning Fast Playback", description: "Zero-bloat architecture optimized for instant 4K and 8K streaming without buffering.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/lightweight.png?raw=true" }, 
+  { id: "04", label: "", category: "Codecs", title: "Native Support", description: "H.265, AV1, and HDR content play natively. No additional codec packs required.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/codecs.png?raw=true" },
+  { id: "10", label: "", category: "Formats", title: "Standard Formats", description: "Supports a wide range of formats including MP4, MKV, AVI, and more.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/formtas.png?raw=true" },  
+  { id: "05", label: "", category: "Management", title: "Intelligent Organization", description: "Automated media tagging and history synchronization across all your connected devices.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/smartlibrary.png?raw=true" },
+  { id: "06", label: "", category: "Assisted", title: "Ask Zephyra AI", description: "An integrated assistant that understands your content and provides instant insights.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/ai-assited.png?raw=true" },
+  { id: "07", label: "", category: "Playground", title: "Main Theater Stage", description: "The core viewing environment with customizable skins and advanced hardware acceleration.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/playground.png?raw=true" },
+  { id: "08", label: "", category: "Extensions", title: "Modular System", description: "Extend your experience with custom playback accessories and unique user-built tools.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/extension-systems.png?raw=true" },
+  { id: "09", label: "", category: "Marketplace", title: "Extension Marketplace", description: "Discover and install community-driven themes and power-user utilities with one click.", image: "https://github.com/BlackBlazent/BlackBlazentGithubAssets/blob/main/Public/BlackVideo/assets/banner/marketplace.png?raw=true" },
   { 
   id: "11", 
   label: "", 
@@ -72,12 +72,12 @@ function FeatureCard({ feature, index }: { feature: any, index: number }) {
 
       {/* 3. Big Image Container (Fixed responsive breaking) */}
       <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-border shadow-inner bg-background">
-        <motion.div style={{ y }} className="relative h-[120%] w-full">
+        <motion.div style={{ y }} className="relative h-[120%] w-full h-full"> {/*h-[120*/}
           <img
           style={{objectFit: 'cover', objectPosition: 'center', width: '100%', height: '100%'}} 
             src={feature.image} 
             alt={feature.title}
-            className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 transition-transform duration-500 ease-in-out hover:scale-125 transform"
+            className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 transition-transform duration-500 ease-in-out hover:scale-110 transform"
           />
         </motion.div>
         
